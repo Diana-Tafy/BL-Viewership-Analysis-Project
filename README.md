@@ -67,3 +67,17 @@ This analysis focuses on answering critical executive business questions:
 * **Data Visualization & Dashboard Design**
 * **Trend Analysis & Anomaly Flagging**
 * **Executive Communication & Strategic Recommendations**
+
+###Data Coverage & Known Limitations
+
+***Date Range
+
+***The source dataset (Viewership Analysis.xlsx) covers 1 November 2020 – 16 April 2021 only. No data exists for any period outside this range, including Q3 2020 (July–September). This is not a data loss issue — the source file was never provided with Q3 data, so this reflects the actual scope of the extract received, not a processing error.
+
+***Action required: If Q3 2020 (or any period outside Nov 2020–Apr 2021) is needed for reporting, this must be requested as a separate extract from the source system/owner.
+
+#Missing Date
+
+***Within the available range, 1 December 2020 has no viewership records, despite every other day in the sequence being present (166 of 167 expected calendar days). This gap exists in the original source file and was not introduced during ingestion or processing.
+
+***Impact: Any day-over-day, weekly, or rolling analysis that spans this date may show an artificial dip. This has no material effect on the overall trend findings in this analysis but should be noted if building further reports on early December 2020.
